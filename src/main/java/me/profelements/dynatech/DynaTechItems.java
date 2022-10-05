@@ -55,6 +55,7 @@ public class DynaTechItems {
     public static final SlimefunItemStack BEE = new SlimefunItemStack("BEE", PlayerHead.getItemStack(PlayerSkin.fromHashCode("12724a9a4cdd68ba49415560e5be40b4a1c47cb5be1d66aedb52a30e62ef2d47")), "&6Bee");
     public static final SlimefunItemStack ROBOTIC_BEE = new SlimefunItemStack("ROBOTIC_BEE", PlayerHead.getItemStack(PlayerSkin.fromHashCode("16f728c89904b2cb57f853d31d0e2061f52917981fedccb1e949528e08eb4140")), "&6Robotic Bee");
     public static final SlimefunItemStack ADVANCED_ROBOTIC_BEE = new SlimefunItemStack("ADVANCED_ROBOTIC_BEE", PlayerHead.getItemStack(PlayerSkin.fromHashCode("c1c96e8cf83cbade55ffa667197ea6990290e5c7dc679104332caead97eef09")), "&6Advanced Robotic Bee");
+    public static final SlimefunItemStack HYPER_INGOT = new SlimefunItemStack("HYPER_INGOT", Material.IRON_INGOT, "&6Hyper Ingot");
 
     //Tools
     public static final SlimefunItemStack PICNIC_BASKET = new SlimefunItemStack("PICNIC_BASKET",
@@ -572,4 +573,11 @@ public class DynaTechItems {
     
     });
 
+    public static void setup() {
+
+        component(HYPER_INGOT, RecipeType.SMELTERY,
+                SlimefunItems.COPPER_INGOT, SlimefunItems.TIN_INGOT, SlimefunItems.ZINC_DUST,
+                SlimefunItems.TIN_DUST, SlimefunItems.ALUMINUM_DUST
+        );
+}
 }
